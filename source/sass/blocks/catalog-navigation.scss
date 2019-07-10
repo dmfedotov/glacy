@@ -1,0 +1,27 @@
+.catalog-navigation {
+  list-style-type: none;
+
+  background: #ffffff;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.catalog-navigation__item {
+  &:hover:not(:first-of-type):not(.catalog-navigation__item--active) {
+    background: #fbded7;
+  }
+
+  &:active:not(:first-of-type):not(.catalog-navigation__item--active) {
+    background: #f6b5a5;
+  }
+}
+
+.catalog-navigation__link {
+  color: #323232;
+  text-decoration: none;
+}
+
+.catalog-navigation__item--active {
+  color: #ffffff;
+
+  background: #d07058;
+}
