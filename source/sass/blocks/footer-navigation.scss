@@ -1,0 +1,25 @@
+.footer-navigation {
+  list-style-type: none;
+}
+
+.footer-navigation__item a {
+  font-size: 13px;
+  color: #ffffff;
+  text-decoration: none;
+
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+
+  &:hover {
+    color: #e84d37;
+
+    border-bottom-color: #f9cdc4;
+  }
+
+  &:active {
+    color: #cc4331;
+  }
+}
+
+.footer-navigation__item--hightlight {
+  font-weight: 700;
+}
