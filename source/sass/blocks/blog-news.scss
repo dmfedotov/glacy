@@ -1,0 +1,26 @@
+.blog-news {
+  background: #ffffff url("../img/strawberry-bg.jpg")  no-repeat;
+}
+
+.blog-news__intro {
+  font-weight: 500;
+}
+
+.blog-news__link {
+  font-size: 24px;
+  line-height: 1.25;
+  color: #323232;
+  text-decoration: none;
+
+  border-bottom: 1px solid #323232;
+
+  &:hover {
+    color: #e84d37;
+
+    border-bottom-color: #f9cdc4;
+  }
+
+  &:active {
+    color: #cc4331;
+  }
+}
