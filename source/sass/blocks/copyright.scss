@@ -1,0 +1,20 @@
+.copyright__link {
+  color: #ffffff;
+  text-decoration: none;
+
+  span {
+    border-bottom: 1px solid #ffffff;
+  }
+}
+
+.copyright__link:hover {
+  color: #e84d37;
+
+  span {
+    border-bottom-color: #f9cdc4;
+  }
+}
+
+.copyright__link:active {
+  color: #cc4331;
+}
