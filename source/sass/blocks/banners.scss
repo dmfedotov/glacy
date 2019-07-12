@@ -1,0 +1,26 @@
+.banners__list {
+  list-style-type: none;
+}
+
+.banners__title,
+.banners__desc {
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.banners__title {
+  font-size: 35px;
+}
+
+.banners__desc {
+  font-size: 18px;
+}
+
+.banners__item--raspberry {
+  background: #631a29 url("../img/raspberry-bg.jpg") no-repeat;
+}
+
+.banners__item--chocolate {
+  background: #4c3327 url("../img/chocolate-bg.jpg") no-repeat;
+}
