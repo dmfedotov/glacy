@@ -1,0 +1,18 @@
+.social {
+  list-style-type: none;
+}
+
+.social__item a {
+  background: rgba(255,255,255,0.8);
+  border: 3px solid rgba(255,255,255,0.5);
+
+  &:hover {
+    background: #ffffff;
+    border-color: rgba(255,255,255,0.7);
+  }
+
+  &:active {
+    background: rgba(255,255,255,0.8);
+    border-color: rgba(255,255,255,0.7);
+  }
+}
