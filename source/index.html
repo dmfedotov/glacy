@@ -43,27 +43,24 @@
           <input class="main-search__input" type="search" name="search" id="site-search" placeholder="Что ищем?">
         </form>
       </div>
-      <ul class="user-navigation">
-        <li class="user-navigation__item">
-          Вход
-          <form class="enter-form" action="https://echo.htmlacademy.ru" method="POST">
-            <p>
-              <label class="visually-hidden" for="user-login">Электронная почта</label>
-              <input class="enter-form__input" type="email" name="login" id="user-login"
-                placeholder="Электронная почта">
-            </p>
-            <p>
-              <label class="visually-hidden" for="user-password">Пароль</label>
-              <input class="enter-form__input" type="password" name="password" id="user-password" placeholder="Пароль">
-            </p>
-            <button class="enter-form__submit  button" type="submit">Войти</button>
-            <a class="enter-form__resetore" href="#">Забыли пароль?</a>
-            <a class="enter-form__register" href="#">Новая регистрация</a>
-          </form>
-        </li>
-      </ul>
+      <div class="user">
+        <a class="user__link" href="login.html">Вход</a>
+        <form class="user__form" action="https://echo.htmlacademy.ru" method="POST">
+          <p>
+            <label class="visually-hidden" for="user-login">Электронная почта</label>
+            <input class="user__form-input" type="email" name="login" id="user-login" placeholder="Электронная почта">
+          </p>
+          <p>
+            <label class="visually-hidden" for="user-password">Пароль</label>
+            <input class="user__form-input" type="password" name="password" id="user-password" placeholder="Пароль">
+          </p>
+          <button class="user__form-submit  button" type="submit">Войти</button>
+          <a class="user__form-restore" href="#">Забыли пароль?</a>
+          <a class="user__form-register" href="#">Новая регистрация</a>
+        </form>
+      </div>
       <p class="basket">
-        <a class="basket__link" href="#" aria-label="Корзина">Пусто</a>
+        <a class="basket__link" href="basket.html" aria-label="Корзина">Пусто</a>
       </p>
     </nav>
     <ul class="schedule">
@@ -135,7 +132,8 @@
           <a class="hits__name" href="#">Сливочно-кофейное с кусочками шоколада</a>
         </li>
         <li class="hits__item">
-          <img class="hits__picture" src="img/strawberry-icecream.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+          <img class="hits__picture" src="img/strawberry-icecream.jpg"
+            alt="Сливочно-клубничное с присыпкой из белого шоколада">
           <p class="hits__price">355 Р <span>/кг</span></p>
           <a class="hits__name" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
         </li>
@@ -190,7 +188,8 @@
         что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
       <form class="mail-service__form" action="https://echo.htmlacademy.ru" method="POST">
         <label class="visually-hidden" for="mail-service">Электронная почта</label>
-        <input class="mail-service__input" type="email" name="mail-service" id="mail-service" placeholder="Электронная почта">
+        <input class="mail-service__input" type="email" name="mail-service" id="mail-service"
+          placeholder="Электронная почта">
         <button class="mail-service__submit  button" type="submit">Отправить</button>
       </form>
     </section>
@@ -262,7 +261,8 @@
       </p>
       <div>
         <label class="visually-hidden" for="user-message">Введите ваше сообщение</label>
-        <textarea class="modal__message" name="message" id="user-message" cols="30" rows="10">Напишите что-нибудь...</textarea>
+        <textarea class="modal__message" name="message" id="user-message" cols="30"
+          rows="10">Напишите что-нибудь...</textarea>
       </div>
       <button class="modal__submit  button" type="submit">Отправить</button>
     </form>
