@@ -1,0 +1,34 @@
+.user {
+  background: #f8f7f4;
+}
+
+.user__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  color: #ffffff;
+  text-decoration: none;
+
+  background: rgba(255,255,255,0.2);
+
+  &:hover {
+    color: #000000;
+
+    background: #ffffff;
+  }
+}
+
+.user__form-input {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #999999;
+}
+
+.user__form-link {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #323232;
+  text-decoration: underline;
+}
