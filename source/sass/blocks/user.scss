@@ -30,5 +30,14 @@
   font-size: 13px;
   line-height: 1.8;
   color: #323232;
-  text-decoration: underline;
+  border-bottom: 1px solid #adacaa;
+
+  &:hover {
+    color: #e84d37;
+    border-bottom-color: #f9cdc4;
+  }
+
+  &:active {
+    color: #cc4331;
+  }
 }
