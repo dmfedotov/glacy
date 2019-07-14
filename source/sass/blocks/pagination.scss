@@ -1,0 +1,21 @@
+.pagination__list {
+  list-style-type: none;
+}
+
+.pagination__link[href] {
+  font-weight: 500;
+  line-height: 1.1;
+  color: #ffffff;
+  text-decoration: none;
+
+  &:hover {
+    background: rgba(255,255,255,0.2);
+  }
+}
+
+.pagination__link:not([href]) {
+  color: #000000;
+
+  background: #ffffff;
+}
+
