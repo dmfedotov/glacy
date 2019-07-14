@@ -1,20 +1,29 @@
-.hits__list {
+.catalog__list {
   list-style-type: none;
 }
 
-.hits__price {
+.catalog__item:hover {
+  background: rgba(255,255,255,0.2);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.catalog__inner a {
+  text-decoration: none;
+}
+
+.catalog__price {
   font-weight: 700;
   font-size: 45px;
   line-height: 1;
   color: #ffffff;
 }
 
-.hits__price span {
+.catalog__price span {
   font-size: 30px;
   line-height: 1.5;
 }
 
-.hits__name {
+.catalog__name {
   font-weight: 500;
   line-height: 1.4;
   color: #ffffff;
