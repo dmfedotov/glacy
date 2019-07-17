@@ -1,5 +1,7 @@
 .features {
-  background: #e5dac3 url("../img/features-bg.jpg") no-repeat;
+  margin-bottom: 40px;
+
+  background: #e5dac3 url("../img/features-bg.jpg") repeat-x;
 }
 
 .features__promo {
@@ -9,5 +11,15 @@
 }
 
 .features__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   list-style-type: none;
+}
+
+.features__item {
+  width: 560px;
 }
