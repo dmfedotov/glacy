@@ -1,5 +1,10 @@
+.inner-page .catalog {
+  margin-bottom: 80px;
+}
+
 .catalog__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
@@ -9,6 +14,7 @@
 
 .catalog__item {
   width: 267px;
+  margin-bottom: 40px;
 
   &:hover {
     background: rgba(255,255,255,0.2);
@@ -16,8 +22,17 @@
   }
 }
 
+.hits .catalog__item {
+  margin-bottom: 0;
+}
+
 .catalog__inner a {
   text-decoration: none;
+}
+
+.catalog__picture {
+  width: 267px;
+  height: 267px;
 }
 
 .catalog__price {
