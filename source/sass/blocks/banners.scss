@@ -1,12 +1,25 @@
+.banners {
+  margin-bottom: 40px;
+}
+
 .banners__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   list-style-type: none;
+}
+
+.banners__item {
+  width: 560px;
 }
 
 .banners__title,
 .banners__desc {
   font-weight: 700;
-  color: #ffffff;
   line-height: 1.2;
+  color: #ffffff;
 }
 
 .banners__title {
