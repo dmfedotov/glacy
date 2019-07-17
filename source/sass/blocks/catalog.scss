@@ -1,10 +1,19 @@
 .catalog__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   list-style-type: none;
 }
 
-.catalog__item:hover {
-  background: rgba(255,255,255,0.2);
-  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+.catalog__item {
+  width: 267px;
+
+  &:hover {
+    background: rgba(255,255,255,0.2);
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+  }
 }
 
 .catalog__inner a {
