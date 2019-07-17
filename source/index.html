@@ -11,62 +11,72 @@
 
 <body>
   <header class="main-header">
-    <div class="container">
-      <nav class="main-navigation">
+    <div class="main-header__wrapper">
+
+      <div class="container">
+
         <img class="logo" src="img/logo.svg" width="154" height="64" alt="Глейси - магазин мороженого и варенья">
-        <ul class="site-navigation">
-          <li class="site-navigation__item">
-            <a class="site-navigation__link" href="catalog.html">Каталог</a>
-            <ul class="catalog-navigation">
-              <li class="catalog-navigation__item">
-                <a class="catalog-navigation__link" href="catalog.html"><b>Новинки</b></a>
-              </li>
-              <li class="catalog-navigation__item">
-                <a class="catalog-navigation__link" href="catalog.html">Сливочное</a>
-              </li>
-              <li class="catalog-navigation__item">
-                <a class="catalog-navigation__link" href="catalog.html">Щербеты</a>
-              </li>
-              <li class="catalog-navigation__item">
-                <a class="catalog-navigation__link" href="catalog.html">Фруктовый лед</a>
-              </li>
-              <li class="catalog-navigation__item">
-                <a class="catalog-navigation__link" href="catalog.html">Мелорин</a>
-              </li>
-            </ul>
-          </li>
-          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Доставка и оплата</a></li>
-          <li class="site-navigation__item"><a class="site-navigation__link" href="#">О Компании</a></li>
-        </ul>
-        <div class="main-search">
-          <form class="main-search__form" action="https://echo.htmlacademy.ru" method="GET">
-            <label class="visually-hidden" for="site-search">Поиск по сайту</label>
-            <input class="main-search__form-input" type="search" name="search" id="site-search" placeholder="Что ищем?">
-          </form>
+        <nav class="main-navigation">
+          <ul class="site-navigation">
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="catalog.html">Каталог</a>
+              <ul class="catalog-navigation">
+                <li class="catalog-navigation__item">
+                  <a class="catalog-navigation__link" href="catalog.html"><b>Новинки</b></a>
+                </li>
+                <li class="catalog-navigation__item">
+                  <a class="catalog-navigation__link" href="catalog.html">Сливочное</a>
+                </li>
+                <li class="catalog-navigation__item">
+                  <a class="catalog-navigation__link" href="catalog.html">Щербеты</a>
+                </li>
+                <li class="catalog-navigation__item">
+                  <a class="catalog-navigation__link" href="catalog.html">Фруктовый лед</a>
+                </li>
+                <li class="catalog-navigation__item">
+                  <a class="catalog-navigation__link" href="catalog.html">Мелорин</a>
+                </li>
+              </ul>
+            </li>
+            <li class="site-navigation__item"><a class="site-navigation__link" href="#">Доставка и оплата</a></li>
+            <li class="site-navigation__item"><a class="site-navigation__link" href="#">О Компании</a></li>
+          </ul>
+        </nav>
+
+        <div class="user-wrapper">
+          <div class="main-search">
+            <form class="main-search__form" action="https://echo.htmlacademy.ru" method="GET">
+              <label class="visually-hidden" for="site-search">Поиск по сайту</label>
+              <input class="main-search__form-input" type="search" name="search" id="site-search"
+                placeholder="Что ищем?">
+            </form>
+          </div>
+          <div class="user">
+            <a class="user__link" href="login.html">Вход</a>
+            <form class="user__form" action="https://echo.htmlacademy.ru" method="POST">
+              <p>
+                <label class="visually-hidden" for="user-login">Электронная почта</label>
+                <input class="user__form-input" type="email" name="login" id="user-login"
+                  placeholder="Электронная почта">
+              </p>
+              <p>
+                <label class="visually-hidden" for="user-password">Пароль</label>
+                <input class="user__form-input" type="password" name="password" id="user-password" placeholder="Пароль">
+              </p>
+              <button class="user__form-submit  button" type="submit">Войти</button>
+              <a class="user__form-link" href="#">Забыли пароль?</a>
+              <a class="user__form-link" href="#">Новая регистрация</a>
+            </form>
+          </div>
+          <div class="basket">
+            <a class="basket__link" href="basket.html" aria-label="Корзина">Пусто</a>
+          </div>
+          <p class="schedule">С 10 до 20, ежедневно <br>
+            <span class="schedule__phone">8 812 450-25-25</span>
+          </p>
         </div>
-        <div class="user">
-          <a class="user__link" href="login.html">Вход</a>
-          <form class="user__form" action="https://echo.htmlacademy.ru" method="POST">
-            <p>
-              <label class="visually-hidden" for="user-login">Электронная почта</label>
-              <input class="user__form-input" type="email" name="login" id="user-login" placeholder="Электронная почта">
-            </p>
-            <p>
-              <label class="visually-hidden" for="user-password">Пароль</label>
-              <input class="user__form-input" type="password" name="password" id="user-password" placeholder="Пароль">
-            </p>
-            <button class="user__form-submit  button" type="submit">Войти</button>
-            <a class="user__form-link" href="#">Забыли пароль?</a>
-            <a class="user__form-link" href="#">Новая регистрация</a>
-          </form>
-        </div>
-        <div class="basket">
-          <a class="basket__link" href="basket.html" aria-label="Корзина">Пусто</a>
-        </div>
-      </nav>
-      <p class="schedule">С 10 до 20, ежедневно <br>
-        <span class="schedule__phone">8 812 450-25-25</span>
-      </p>
+
+      </div>
     </div>
   </header>
 

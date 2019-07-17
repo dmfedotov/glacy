@@ -11,110 +11,120 @@
 
 <body>
   <header class="main-header">
-    <div class="container">
-      <nav class="main-navigation">
+    <div class="main-header__wrapper">
+
+      <div class="container">
+
         <a class="main-header__logo" href="index.html">
           <img class="logo" src="img/logo.svg" width="154" height="64" alt="Глейси - магазин мороженого и варенья">
         </a>
-        <ul class="site-navigation">
-          <li class="site-navigation__item  site-navigation__item--active">
-            Каталог
-            <ul class="catalog-navigation">
-              <li class="catalog-navigation__item">
-                <a class="catalog-navigation__link" href="catalog.html"><b>Новинки</b></a>
-              </li>
-              <li class="catalog-navigation__item  catalog-navigation__item--active">
-                <a class="catalog-navigation__link" href="catalog.html">Сливочное</a>
-              </li>
-              <li class="catalog-navigation__item">
-                <a class="catalog-navigation__link" href="catalog.html">Щербеты</a>
-              </li>
-              <li class="catalog-navigation__item">
-                <a class="catalog-navigation__link" href="catalog.html">Фруктовый лед</a>
-              </li>
-              <li class="catalog-navigation__item">
-                <a class="catalog-navigation__link" href="catalog.html">Мелорин</a>
-              </li>
-            </ul>
-          </li>
-          <li class="site-navigation__item"><a href="">Доставка и оплата</a></li>
-          <li class="site-navigation__item"><a href="">О компании</a></li>
-        </ul>
-        <div class="main-navigation__search main-search">
-          <form class="main-search__form" action="https://echo.htmlacademy.ru" method="GET">
-            <label class="visually-hidden" for="site-search">Поиск по сайту</label>
-            <input class="main-search__input" type="search" name="search" id="site-search" placeholder="Что ищем?">
-          </form>
-        </div>
-        <ul class="user-navigation">
-          <li class="user-navigation__item">
-            Вход
-            <form class="enter-form" action="https://echo.htmlacademy.ru" method="POST">
+        <nav class="main-navigation">
+          <ul class="site-navigation">
+            <li class="site-navigation__item  site-navigation__item--active">
+              Каталог
+              <ul class="catalog-navigation">
+                <li class="catalog-navigation__item">
+                  <a class="catalog-navigation__link" href="catalog.html"><b>Новинки</b></a>
+                </li>
+                <li class="catalog-navigation__item  catalog-navigation__item--active">
+                  <a class="catalog-navigation__link" href="catalog.html">Сливочное</a>
+                </li>
+                <li class="catalog-navigation__item">
+                  <a class="catalog-navigation__link" href="catalog.html">Щербеты</a>
+                </li>
+                <li class="catalog-navigation__item">
+                  <a class="catalog-navigation__link" href="catalog.html">Фруктовый лед</a>
+                </li>
+                <li class="catalog-navigation__item">
+                  <a class="catalog-navigation__link" href="catalog.html">Мелорин</a>
+                </li>
+              </ul>
+            </li>
+            <li class="site-navigation__item"><a href="">Доставка и оплата</a></li>
+            <li class="site-navigation__item"><a href="">О компании</a></li>
+          </ul>
+          <div class="main-navigation__search main-search">
+            <form class="main-search__form" action="https://echo.htmlacademy.ru" method="GET">
+              <label class="visually-hidden" for="site-search">Поиск по сайту</label>
+              <input class="main-search__input" type="search" name="search" id="site-search" placeholder="Что ищем?">
+            </form>
+          </div>
+        </nav>
+        <div class="user-wrapper">
+          <div class="main-search">
+            <form class="main-search__form" action="https://echo.htmlacademy.ru" method="GET">
+              <label class="visually-hidden" for="site-search">Поиск по сайту</label>
+              <input class="main-search__form-input" type="search" name="search" id="site-search"
+                placeholder="Что ищем?">
+            </form>
+          </div>
+          <div class="user">
+            <a class="user__link" href="login.html">Вход</a>
+            <form class="user__form" action="https://echo.htmlacademy.ru" method="POST">
               <p>
                 <label class="visually-hidden" for="user-login">Электронная почта</label>
-                <input class="enter-form__input" type="email" name="login" id="user-login"
+                <input class="user__form-input" type="email" name="login" id="user-login"
                   placeholder="Электронная почта">
               </p>
               <p>
                 <label class="visually-hidden" for="user-password">Пароль</label>
-                <input class="enter-form__input" type="password" name="password" id="user-password"
-                  placeholder="Пароль">
+                <input class="user__form-input" type="password" name="password" id="user-password" placeholder="Пароль">
               </p>
-              <button class="enter-form__submit  button" type="submit">Войти</button>
-              <a class="enter-form__resetore" href="#">Забыли пароль?</a>
-              <a class="enter-form__register" href="#">Новая регистрация</a>
+              <button class="user__form-submit  button" type="submit">Войти</button>
+              <a class="user__form-link" href="#">Забыли пароль?</a>
+              <a class="user__form-link" href="#">Новая регистрация</a>
             </form>
-          </li>
-        </ul>
-        <div class="basket  basket--full">
-          <span class="visually-hidden">Корзина</span>
-          <a class="basket__link" href="basket.html" aria-label="Корзина">2 товара</a>
-          <div class="basket__tooltip">
-            <table class="basket__table">
-              <tr class="basket__row">
-                <td class="basket__col">
-                  <button class="basket__delete-button" type="button">
-                    <span class="visually-hidden">Удалить</span>
-                  </button>
-                </td>
-                <td class="basket__col">
-                  <a class="backet__picture" href="">
-                    <img src="img/icecream.jpg" alt="Пломбир с апельсиновым джемом">
-                  </a>
-                </td>
-                <td class="basket__col backet__col--name">Пломбир с апельсиновым джемом</td>
-                <td class="basketp__col">1,5 кг x <span>200 руб.</span></td>
-                <td class="basket__col">300 руб.</td>
-              </tr>
-              <tr class="basket__row">
-                <td class="basket__col">
-                  <button class="basket__delete-button" type="button">
-                    <span class="visually-hidden">Удалить</span>
-                  </button>
-                </td>
-                <td class="basket__col">
-                  <a class="backet__picture" href="">
-                    <img src="img/strawberry-icecream.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада">
-                  </a>
-                </td>
-                <td class="basket__col backet__col--name">Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td class="basket__col">1,5 кг x <span>300 руб.</span></td>
-                <td class="basket__col">450 руб.</td>
-              </tr>
-              <tr class="basket__row">
-                <td colspan="5">
-                  <strong class="basket__total">Итого: 750 руб.</strong>
-                </td>
-              </tr>
-            </table>
-            <a class="basket__push-button  button" href="">Оформить заказ</a>
           </div>
+          <div class="basket  basket--full">
+            <span class="visually-hidden">Корзина</span>
+            <a class="basket__link" href="basket.html" aria-label="Корзина">2 товара</a>
+            <div class="basket__tooltip">
+              <table class="basket__table">
+                <tr class="basket__row">
+                  <td class="basket__col">
+                    <button class="basket__delete-button" type="button">
+                      <span class="visually-hidden">Удалить</span>
+                    </button>
+                  </td>
+                  <td class="basket__col">
+                    <a class="backet__picture" href="">
+                      <img src="img/icecream.jpg" alt="Пломбир с апельсиновым джемом">
+                    </a>
+                  </td>
+                  <td class="basket__col backet__col--name">Пломбир с апельсиновым джемом</td>
+                  <td class="basketp__col">1,5 кг x <span>200 руб.</span></td>
+                  <td class="basket__col">300 руб.</td>
+                </tr>
+                <tr class="basket__row">
+                  <td class="basket__col">
+                    <button class="basket__delete-button" type="button">
+                      <span class="visually-hidden">Удалить</span>
+                    </button>
+                  </td>
+                  <td class="basket__col">
+                    <a class="backet__picture" href="">
+                      <img src="img/strawberry-icecream.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                    </a>
+                  </td>
+                  <td class="basket__col backet__col--name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td class="basket__col">1,5 кг x <span>300 руб.</span></td>
+                  <td class="basket__col">450 руб.</td>
+                </tr>
+                <tr class="basket__row">
+                  <td colspan="5">
+                    <strong class="basket__total">Итого: 750 руб.</strong>
+                  </td>
+                </tr>
+              </table>
+              <a class="basket__push-button  button" href="">Оформить заказ</a>
+            </div>
+          </div>
+          <p class="schedule">С 10 до 20, ежедневно <br>
+            <span class="schedule__phone">8 812 450-25-25</span>
+          </p>
         </div>
-      </nav>
-      <ul class="schedule">
-        <li class="schedule__desc" aria-label="График работы">С 10 до 20, ежедневно</li>
-        <li class="schedule__phone-number" aria-label="Рабочий телефон">8 812 450-25-25</li>
-      </ul>
+
+      </div>
     </div>
   </header>
 
