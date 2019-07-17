@@ -1,4 +1,6 @@
 .filters {
+  margin-bottom: 40px;
+
   font-weight: 500;
   line-height: 1.1;
   color: #ffffff;
@@ -17,11 +19,12 @@
 }
 
 .filters__type {
-  background: rgba(255, 255, 255, 0.2);
   color: inherit;
+
+  background: rgba(255, 255, 255, 0.2);
   border: none;
 
   &:hover {
-    color: #000;
+    color: #000000;
   }
 }
