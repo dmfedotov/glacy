@@ -6,15 +6,11 @@ const browserSync  = require('browser-sync').create();
 // const htmlmin      = require('gulp-htmlmin');
 const autoprefixer = require('autoprefixer');
 const svgstore     = require('gulp-svgstore');
-const cheerio      = require('gulp-cheerio');
-const replace      = require('gulp-replace');
 const postcss      = require("gulp-postcss");
 // const uncss        = require('postcss-uncss');
 const plumber      = require("gulp-plumber");
 const notify       = require("gulp-notify");
 const imagemin     = require("gulp-imagemin");
-// const uglify       = require("gulp-uglify");
-// const webp         = require("gulp-webp");
 const sass         = require('gulp-sass');
 const csso         = require('gulp-csso');
 const rename       = require('gulp-rename');
@@ -126,19 +122,8 @@ gulp.task('sprite', function () {
     .pipe(svgstore({
       inlineSvg: true
     }))
-    .pipe(cheerio({
-      run: function ($) {
-        $('[fill]').removeAttr('fill');
-        $('[stroke]').removeAttr('stroke');
-        $('[style]').removeAttr('style');
-      },
-      parserOptions: {
-        xmlMode: true
-      }
-    }))
-    .pipe(replace('&gt;', '>'))
     .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest(paths.images.dest));
 });
 
 // Копирование файлов
