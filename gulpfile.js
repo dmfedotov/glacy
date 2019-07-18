@@ -5,9 +5,9 @@ const del          = require('del');
 const browserSync  = require('browser-sync').create();
 // const htmlmin      = require('gulp-htmlmin');
 const autoprefixer = require('autoprefixer');
-// const svgstore     = require('gulp-svgstore');
-// const cheerio      = require('gulp-cheerio');
-// const replace      = require('gulp-replace');
+const svgstore     = require('gulp-svgstore');
+const cheerio      = require('gulp-cheerio');
+const replace      = require('gulp-replace');
 const postcss      = require("gulp-postcss");
 // const uncss        = require('postcss-uncss');
 const plumber      = require("gulp-plumber");
@@ -121,25 +121,25 @@ gulp.task('server', function () {
 });
 
 // Создание SVG спрайта
-// gulp.task('sprite', function () {
-//   return gulp.src('source/img/*.svg')
-//     .pipe(svgstore({
-//       inlineSvg: true
-//     }))
-//     .pipe(cheerio({
-//       run: function ($) {
-//         $('[fill]').removeAttr('fill');
-//         $('[stroke]').removeAttr('stroke');
-//         $('[style]').removeAttr('style');
-//       },
-//       parserOptions: {
-//         xmlMode: true
-//       }
-//     }))
-//     .pipe(replace('&gt;', '>'))
-//     .pipe(rename('sprite.svg'))
-//     .pipe(gulp.dest(paths.images.dest));
-// });
+gulp.task('sprite', function () {
+  return gulp.src('source/img/*-icon.svg')
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(cheerio({
+      run: function ($) {
+        $('[fill]').removeAttr('fill');
+        $('[stroke]').removeAttr('stroke');
+        $('[style]').removeAttr('style');
+      },
+      parserOptions: {
+        xmlMode: true
+      }
+    }))
+    .pipe(replace('&gt;', '>'))
+    .pipe(rename('sprite.svg'))
+    .pipe(gulp.dest("source/img"));
+});
 
 // Копирование файлов
 gulp.task('copy', function  () {
