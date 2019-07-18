@@ -18,7 +18,7 @@
         <img class="logo" src="img/logo.svg" width="154" height="64" alt="Глейси - магазин мороженого и варенья">
         <nav class="main-navigation">
           <ul class="site-navigation">
-            <li class="site-navigation__item">
+            <li class="site-navigation__item  site-navigation__item--hover">
               <a class="site-navigation__link" href="catalog.html">Каталог</a>
               <ul class="catalog-navigation">
                 <li class="catalog-navigation__item">
@@ -45,6 +45,11 @@
 
         <div class="user-wrapper">
           <div class="main-search">
+            <a class="main-search__link" href="search.html">
+              <svg class="main-search__icon" width="17" height="17">
+                <use xlink:href="img/sprite.svg#search-icon"></use>
+              </svg>
+            </a>
             <form class="main-search__form" action="https://echo.htmlacademy.ru" method="GET">
               <label class="visually-hidden" for="site-search">Поиск по сайту</label>
               <input class="main-search__form-input" type="search" name="search" id="site-search"
@@ -52,7 +57,11 @@
             </form>
           </div>
           <div class="user">
-            <a class="user__link" href="login.html">Вход</a>
+            <a class="user__link" href="login.html">Вход
+              <svg class="user__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#login-icon"></use>
+              </svg>
+            </a>
             <form class="user__form" action="https://echo.htmlacademy.ru" method="POST">
               <p>
                 <label class="visually-hidden" for="user-login">Электронная почта</label>
@@ -69,7 +78,11 @@
             </form>
           </div>
           <div class="basket">
-            <a class="basket__link" href="basket.html" aria-label="Корзина">Пусто</a>
+            <a class="basket__link" href="basket.html" aria-label="Корзина">Пусто
+              <svg class="basket__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#basket-icon"></use>
+              </svg>
+            </a>
           </div>
           <p class="schedule">С 10 до 20, ежедневно <br>
             <span class="schedule__phone">8 812 450-25-25</span>

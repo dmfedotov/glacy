@@ -1,4 +1,16 @@
+.user {
+  margin-right: 10px;
+}
+
 .user__link {
+  position: relative;
+
+  display: inline-block;
+  padding-top: 9px;
+  padding-right: 15px;
+  padding-bottom: 9px;
+  padding-left: 45px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -6,15 +18,36 @@
   text-decoration: none;
 
   background: rgba(255,255,255,0.2);
+  border-radius: 15px;
 
-  &:hover {
+
+  &:hover,
+  &:focus {
     color: #000000;
 
     background: #ffffff;
+
+    .user__icon {
+      fill: #000000;
+    }
+  }
+
+  &:active {
+    box-shadow: inset 0 2px 1px 0 rgba(34, 34, 34, 0.7);
   }
 }
 
+.user__icon {
+  position: absolute;
+  top: 6px;
+  left: 17px;
+
+  fill: #ffffff;
+}
+
 .user__form {
+  display: none;
+
   background: #f8f7f4;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }

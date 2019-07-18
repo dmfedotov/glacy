@@ -1,4 +1,8 @@
 .user-wrapper {
-  width: 560px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 267px;
+  margin-top: 15px;
   margin-left: auto;
 }
