@@ -13,21 +13,10 @@
   padding-bottom: 5px;
 }
 
-.site-navigation__item {
-  &:hover,
-  &:focus {
-    .site-navigation__link {
-      color: #000000;
+.site-navigation__item:hover .site-navigation__link {
+  color: #000000;
 
-      background: #ffffff;
-    }
-  }
-
-  &:active {
-    .site-navigation__link {
-      box-shadow: inset 0 2px 1px 0 rgba(34, 34, 34, 0.7);
-    }
-  }
+  background: #ffffff;
 }
 
 .site-navigation__item--hover:hover .catalog-navigation {
@@ -45,6 +34,16 @@
   text-decoration: none;
 
   border-radius: 15px;
+
+  &:active {
+    box-shadow: inset 0 2px 1px 0 rgba(34, 34, 34, 0.7);
+  }
+
+  &:focus {
+    color: #000000;
+
+    background: #ffffff;
+  }
 
   &::after {
     content: "";
