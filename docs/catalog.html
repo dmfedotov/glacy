@@ -20,13 +20,13 @@
         </a>
         <nav class="main-navigation">
           <ul class="site-navigation">
-            <li class="site-navigation__item  site-navigation__item--active">
-              Каталог
+            <li class="site-navigation__item  site-navigation__item--hover">
+              <a class="site-navigation__link" href="catalog.html">Каталог</a>
               <ul class="catalog-navigation">
                 <li class="catalog-navigation__item">
                   <a class="catalog-navigation__link" href="catalog.html"><b>Новинки</b></a>
                 </li>
-                <li class="catalog-navigation__item  catalog-navigation__item--active">
+                <li class="catalog-navigation__item">
                   <a class="catalog-navigation__link" href="catalog.html">Сливочное</a>
                 </li>
                 <li class="catalog-navigation__item">
@@ -40,18 +40,17 @@
                 </li>
               </ul>
             </li>
-            <li class="site-navigation__item"><a href="">Доставка и оплата</a></li>
-            <li class="site-navigation__item"><a href="">О компании</a></li>
+            <li class="site-navigation__item"><a class="site-navigation__link" href="#">Доставка и оплата</a></li>
+            <li class="site-navigation__item"><a class="site-navigation__link" href="#">О Компании</a></li>
           </ul>
-          <div class="main-navigation__search main-search">
-            <form class="main-search__form" action="https://echo.htmlacademy.ru" method="GET">
-              <label class="visually-hidden" for="site-search">Поиск по сайту</label>
-              <input class="main-search__input" type="search" name="search" id="site-search" placeholder="Что ищем?">
-            </form>
-          </div>
         </nav>
         <div class="user-wrapper">
           <div class="main-search">
+            <a class="main-search__link" href="search.html">
+              <svg class="main-search__icon" width="17" height="17">
+                <use xlink:href="img/sprite.svg#search-icon"></use>
+              </svg>
+            </a>
             <form class="main-search__form" action="https://echo.htmlacademy.ru" method="GET">
               <label class="visually-hidden" for="site-search">Поиск по сайту</label>
               <input class="main-search__form-input" type="search" name="search" id="site-search"
@@ -59,7 +58,11 @@
             </form>
           </div>
           <div class="user">
-            <a class="user__link" href="login.html">Вход</a>
+            <a class="user__link" href="login.html">Вход
+              <svg class="user__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#login-icon"></use>
+              </svg>
+            </a>
             <form class="user__form" action="https://echo.htmlacademy.ru" method="POST">
               <p>
                 <label class="visually-hidden" for="user-login">Электронная почта</label>
@@ -70,9 +73,13 @@
                 <label class="visually-hidden" for="user-password">Пароль</label>
                 <input class="user__form-input" type="password" name="password" id="user-password" placeholder="Пароль">
               </p>
-              <button class="user__form-submit  button" type="submit">Войти</button>
-              <a class="user__form-link" href="#">Забыли пароль?</a>
-              <a class="user__form-link" href="#">Новая регистрация</a>
+              <div class="user__form-bottom">
+                <button class="user__form-submit  button" type="submit">Войти</button>
+                <div class="user__form-links">
+                  <a class="user__form-link" href="#">Забыли пароль?</a>
+                  <a class="user__form-link" href="#">Новая регистрация</a>
+                </div>
+              </div>
             </form>
           </div>
           <div class="basket  basket--full">
