@@ -12,11 +12,32 @@
 }
 
 .banners__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   width: 560px;
+  min-height: 230px;
+  padding-top: 17px;
+  padding-right: 20px;
+  padding-bottom: 23px;
+  padding-left: 20px;
+
+  border-radius: 15px;
+}
+
+.banners__item--raspberry {
+  background: #631a29 url("../img/raspberry-bg.jpg") no-repeat;
+}
+
+.banners__item--chocolate {
+  background: #4c3327 url("../img/chocolate-bg.jpg") no-repeat;
 }
 
 .banners__title,
 .banners__desc {
+  margin: 0;
+  margin-bottom: 17px;
+
   font-weight: 700;
   line-height: 1.2;
   color: #ffffff;
@@ -30,10 +51,9 @@
   font-size: 18px;
 }
 
-.banners__item--raspberry {
-  background: #631a29 url("../img/raspberry-bg.jpg") no-repeat;
-}
+.banners__link {
+  margin-top: auto;
+  margin-left: auto;
 
-.banners__item--chocolate {
-  background: #4c3327 url("../img/chocolate-bg.jpg") no-repeat;
+  border-radius: 21px;
 }
