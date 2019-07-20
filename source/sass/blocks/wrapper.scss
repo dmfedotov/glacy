@@ -1,0 +1,24 @@
+.wrapper {
+  min-width: 1200px;
+
+  background-color: #849d8f;
+  background-image: url("../img/slide1.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+
+  &::before,
+  &::after {
+    content: '';
+    visibility: hidden;
+  }
+}
+
+.wrapper::before {
+  background-image: url("../img/slide2.png");
+}
+
+.wrapper::after {
+  background-image: url("../img/slide3.png");
+}
