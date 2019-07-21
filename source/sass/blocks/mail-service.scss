@@ -1,12 +1,50 @@
 .mail-service {
+  position: relative;
+  z-index: 10;
+
   width: 560px;
+  min-height: 220px;
+  padding: 5px;
+
+  background-color: #ffffff;
+  background-image: repeating-linear-gradient(135deg, #92cdff 0, #92cdff 8px, #ffffff 8px, #ffffff 16px, #fe9e90 16px, #fe9e90 24px, #ffffff 24px, #ffffff 32px);
+  border-radius: 15px;
+}
+
+.mail-service__wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 32px;
+  padding-right: 20px;
+  padding-bottom: 35px;
+  padding-left: 20px;
+
+  background-color: #f8f7f4;
+  border-radius: 15px;
+}
+
+.mail-service__info {
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.mail-service__form {
+  display: flex;
+  justify-content: space-between;
 }
 
 .mail-service__input {
+  width: 368px;
+  padding: 9px 15px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
   color: #323232;
+
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
 
   &::placeholder {
     font-weight: 400;
@@ -14,6 +52,11 @@
   }
 
   &:hover {
-    border: 2px solid #999999;
+    border: 1px solid #999999;
+    box-shadow: 0 0 0 1px inset #999999;
   }
+}
+
+.mail-service__submit {
+  border-radius: 21px;
 }
