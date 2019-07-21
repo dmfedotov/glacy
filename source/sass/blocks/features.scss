@@ -1,10 +1,15 @@
 .features {
   margin-bottom: 40px;
+  padding: 25px 20px;
 
-  background: #e5dac3 url("../img/features-bg.jpg") repeat-x;
+  background: #e5dac3 url("../img/features-bg.jpg") repeat;
+  border-radius: 15px;
 }
 
 .features__promo {
+  margin: 0;
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 24px;
   line-height: 1.25;
@@ -13,7 +18,6 @@
 .features__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
 
@@ -21,5 +25,28 @@
 }
 
 .features__item {
-  width: 560px;
+  position: relative;
+
+  width: 540px;
+  margin-right: 26px;
+  padding-top: 15px;
+  padding-left: 57px;
+
+  &:nth-of-type(even) {
+    margin-right: 0;
+  }
+}
+
+.features__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 50px;
+  height: 50px;
+}
+
+.features__desc {
+  margin: 0;
+  margin-bottom: 10px;
 }
