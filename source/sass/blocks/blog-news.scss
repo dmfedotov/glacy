@@ -1,13 +1,25 @@
 .blog-news {
   width: 560px;
+  min-height: 220px;
+  padding-top: 25px;
+  padding-right: 220px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+
   background: #ffffff url("../img/strawberry-bg.jpg")  no-repeat;
+  background-position: 190px -40px;
+  border-radius: 15px;
 }
 
 .blog-news__intro {
+  margin: 0;
+  margin-bottom: 8px;
+
   font-weight: 500;
 }
 
 .blog-news__link {
+  font-weight: 700;
   font-size: 24px;
   line-height: 1.25;
   color: #323232;
