@@ -1,8 +1,33 @@
 .footer-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  width: 330px;
   margin: 0;
   padding: 0;
 
   list-style-type: none;
+}
+
+.footer-navigation__item {
+  width: 50%;
+
+  &:nth-child(odd) {
+    padding-left: 25px;
+  }
+}
+
+.footer-navigation__item--hightlight {
+  position: relative;
+
+  font-weight: 700;
+}
+
+.footer-navigation__icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+
+  fill: #ffffff;
 }
 
 .footer-navigation__item a {
@@ -21,8 +46,4 @@
   &:active {
     color: darken(#e48d37, 25);
   }
-}
-
-.footer-navigation__item--hightlight {
-  font-weight: 700;
 }
