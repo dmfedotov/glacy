@@ -1,5 +1,11 @@
 .copyright {
+  display: flex;
+  flex-direction: column;
   margin: 0;
+}
+
+.copyright__logo {
+  margin-bottom: 8px;
 }
 
 .copyright__link {
