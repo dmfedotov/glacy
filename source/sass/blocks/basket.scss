@@ -1,3 +1,9 @@
+.basket--full {
+  position: relative;
+
+  padding-bottom: 4px;
+}
+
 .basket__link {
   position: relative;
 
@@ -47,13 +53,67 @@
 }
 
 .basket__tooltip {
+  display: none;
+  width: 540px;
+  padding: 20px 15px;
+
   background: #ffffff;
+  border-radius: 5px;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.basket--full:hover .basket__tooltip {
+  position: absolute;
+  top: 37px;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .basket__table {
   font-size: 13px;
   line-height: 1.2;
+}
+
+.basket__row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.basket__row--total {
+  justify-content: flex-end;
+  margin-bottom: 14px;
+  padding-top: 15px;
+
+  border-top: 1px solid #cacac7;
+}
+
+.basket__col {
+  flex-shrink: 0;
+  margin-right: 14px;
+
+  span {
+    color: #999999;
+  }
+}
+
+.basket__col--name {
+  width: 247px;
+}
+
+.basket__delete-button {
+  padding: 0;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.basket__picture img {
+  width: 33px;
+  max-width: none;
 }
 
 .basket__total {
@@ -62,6 +122,10 @@
 }
 
 .basket__push-button {
+  margin-left: auto;
+
   font-size: 18px;
   line-height: 1.3;
+
+  border-radius: 21px;
 }

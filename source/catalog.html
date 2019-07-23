@@ -84,40 +84,50 @@
           </div>
           <div class="basket  basket--full">
             <span class="visually-hidden">Корзина</span>
-            <a class="basket__link" href="basket.html" aria-label="Корзина">2 товара</a>
+            <a class="basket__link" href="basket.html" aria-label="Корзина">2 товара
+              <svg class="basket__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#basket-red-icon"></use>
+              </svg>
+            </a>
             <div class="basket__tooltip">
               <table class="basket__table">
                 <tr class="basket__row">
                   <td class="basket__col">
                     <button class="basket__delete-button" type="button">
+                      <svg class="basket__delete-icon" width="11" height="11">
+                        <use xlink:href="img/sprite.svg#close-icon"></use>
+                      </svg>
                       <span class="visually-hidden">Удалить</span>
                     </button>
                   </td>
                   <td class="basket__col">
-                    <a class="backet__picture" href="">
-                      <img src="img/icecream.jpg" alt="Пломбир с апельсиновым джемом">
+                    <a class="basket__picture" href="">
+                      <img src="img/icecream.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
                     </a>
                   </td>
-                  <td class="basket__col backet__col--name">Пломбир с апельсиновым джемом</td>
-                  <td class="basketp__col">1,5 кг x <span>200 руб.</span></td>
+                  <td class="basket__col basket__col--name">Пломбир с апельсиновым джемом</td>
+                  <td class="basket__col">1,5 кг x <span>200 руб.</span></td>
                   <td class="basket__col">300 руб.</td>
                 </tr>
                 <tr class="basket__row">
                   <td class="basket__col">
                     <button class="basket__delete-button" type="button">
+                      <svg class="basket__delete-icon" width="11" height="11">
+                        <use xlink:href="img/sprite.svg#close-icon"></use>
+                      </svg>
                       <span class="visually-hidden">Удалить</span>
                     </button>
                   </td>
                   <td class="basket__col">
-                    <a class="backet__picture" href="">
-                      <img src="img/strawberry-icecream.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                    <a class="basket__picture" href="">
+                      <img src="img/strawberry-icecream.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
                     </a>
                   </td>
-                  <td class="basket__col backet__col--name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td class="basket__col basket__col--name">Клубничный пломбир с присыпкой из белого шоколада</td>
                   <td class="basket__col">1,5 кг x <span>300 руб.</span></td>
                   <td class="basket__col">450 руб.</td>
                 </tr>
-                <tr class="basket__row">
+                <tr class="basket__row  basket__row--total">
                   <td colspan="5">
                     <strong class="basket__total">Итого: 750 руб.</strong>
                   </td>
@@ -361,28 +371,54 @@
     <div class="container">
       <ul class="social">
         <li class="social__item">
-          <a href="#" aria-label="Мы в твиттере">TW</a>
+          <a class="social__link" href="#" aria-label="Мы в твиттере">
+            <span class="visually-hidden">Twitter</span>
+            <svg class="social__icon" width="32" height="32">
+              <use xlink:href="img/sprite.svg#twitter-icon"></use>
+            </svg>
+          </a>
         </li>
         <li class="social__item">
-          <a href="#" aria-label="Мы в инстаграме">IN</a>
+          <a class="social__link" href="#" aria-label="Мы в инстаграме">
+            <span class="visually-hidden">Instagram</span>
+            <svg class="social__icon" width="32" height="32">
+              <use xlink:href="img/sprite.svg#instagram-icon"></use>
+            </svg>
+          </a>
         </li>
         <li class="social__item">
-          <a href="#" aria-label="Мы в фейсбуке">FB</a>
+          <a class="social__link" href="#" aria-label="Мы в фейсбуке">
+            <span class="visually-hidden">Facebook</span>
+            <svg class="social__icon" width="32" height="32">
+              <use xlink:href="img/sprite.svg#fb-icon"></use>
+            </svg>
+          </a>
         </li>
         <li class="social__item">
-          <a href="#" aria-label="Мы в контакте">VK</a>
+          <a class="social__link" href="#" aria-label="Мы в контакте">
+            <span class="visually-hidden">Вконтакте</span>
+            <svg class="social__icon" width="32" height="32">
+              <use xlink:href="img/sprite.svg#vk-icon"></use>
+            </svg>
+          </a>
         </li>
       </ul>
       <ul class="main-footer__menu footer-navigation">
-        <li class="footer-navigation__item  footer-navigation__item--hightlight"><a href="#">Для поставщиков</a></li>
+        <li class="footer-navigation__item  footer-navigation__item--hightlight">
+          <a href="#">Для поставщиков
+            <svg class="footer-navigation__icon" width="15" height="13">
+              <use xlink:href="img/sprite.svg#heart-icon"></use>
+            </svg>
+          </a>
+        </li>
         <li class="footer-navigation__item"><a href="#">Наши документы</a></li>
         <li class="footer-navigation__item"><a href="#">О производстве</a></li>
         <li class="footer-navigation__item"><a href="#">Экологические стандарты</a></li>
       </ul>
-      <p class="main-footer__copyright  copyright">
-        <img class="copyright__logo" src="img/logo-htmlacademy-small.svg" width="108" height="38" alt="HTHL Academy">
-        <a class="copyright__link" href="#">Сделано в HTML Academy © 2017</a>
-      </p>
+      <div class="main-footer__copyright  copyright">
+        <img class="copyright__logo" src="img/logo-htmlacademy-small.svg" width="114" height="38" alt="HTHL Academy">
+        <a class="copyright__link" href="#">Сделано в <span>HTML Academy</span> © 2017</a>
+      </div>
     </div>
   </footer>
 </body>
