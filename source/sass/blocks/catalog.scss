@@ -7,20 +7,29 @@
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  padding-top: 40px;
 
   list-style-type: none;
 }
 
 .catalog__item {
+  position: relative;
+
   width: 267px;
+  margin-top: -40px;
   margin-right: 26px;
-  margin-bottom: 40px;
 
   border-radius: 5px;
 
   &:hover {
+    z-index: 10;
+
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+
+    .catalog__preview {
+      visibility: visible;
+    }
   }
 
   &:nth-of-type(4n) {
@@ -104,4 +113,11 @@
   &:active {
     color: darken(#e48d37, 25);
   }
+}
+
+.catalog__preview {
+  margin-top: 17px;
+
+  border-radius: 21px;
+  visibility: hidden;
 }
