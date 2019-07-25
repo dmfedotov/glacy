@@ -1,4 +1,8 @@
 .filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 880px;
   margin-bottom: 40px;
 
   font-weight: 500;
@@ -7,21 +11,40 @@
 }
 
 .filters__block {
-  border: none;
+  margin: 0;
+  margin-right: 15px;
+  margin-bottom: 17px;
+  padding: 0;
 
-  p {
-    background: rgba(255, 255, 255, 0.2);
-  }
+  border: none;
+}
+
+.filters__block--range {
+  width: 218px;
+}
+
+.filters__content {
+  display: flex;
+  align-items: center;
+  height: 36px;
+  margin: 0;
+  padding: 8px 15px;
+
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 21px;
 }
 
 .filters__name {
+  margin-bottom: 7px;
+  padding-left: 16px;
+
   font-size: 14px;
 }
 
 .filters__type {
   color: inherit;
 
-  background: rgba(255, 255, 255, 0.2);
+  background: transparent;
   border: none;
 
   &:hover {

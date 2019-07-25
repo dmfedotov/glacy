@@ -159,56 +159,58 @@
       <form class="filters" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="filters__block">
           <legend class="filters__name">Сортировка:</legend>
-          <select class="filters__type" name="sorting-filter">
-            <option value="by-popular">по популярности</option>
-            <option value="price-ascending">сначала недорогие</option>
-            <option value="price-descending">сначала дорогие</option>
-            <option value="by-fat">по жирности</option>
-          </select>
+          <p class="filters__content">
+            <select class="filters__type" name="sorting-filter">
+              <option value="by-popular">по популярности</option>
+              <option value="price-ascending">сначала недорогие</option>
+              <option value="price-descending">сначала дорогие</option>
+              <option value="by-fat">по жирности</option>
+            </select>
+          </p>
         </fieldset>
-        <fieldset class="filters__block">
+        <fieldset class="filters__block  filters__block--range">
           <legend class="filters__name">Цена: 100 руб. – 500 руб.</legend>
-          <!-- поле с ползунком -->
+          <div class="filters__content">
+            <div class="range"></div>
+          </div>
         </fieldset>
         <fieldset class="filters__block">
           <legend class="filters__name">Жирность:</legend>
-          <p>
-            <input type="radio" name="fat-in-percents" id="0-percent">
-            <label class="field-radio" for="0-percent">0%</label>
-          </p>
-          <p>
-            <input type="radio" name="fat-in-percents" id="to-10-percent" checked>
-            <label class="field-radio" for="to-10-percent">до 10%</label>
-          </p>
-          <p>
-            <input type="radio" name="fat-in-percents" id="to-30-percent">
-            <label class="field-radio" for="to-30-percent">до 30%</label>
-          </p>
-          <p>
-            <input type="radio" name="fat-in-percents" id="above-30-percent">
-            <label class="field-radio" for="above-30-percent">выше 30%</label>
+          <p class="filters__content">
+            <label class="field-radio">
+              <input class="visually-hidden" type="radio" name="fat-in-percents" id="0-percent">
+              <span class="field-radio__box"></span>
+              0%
+            </label>
+            <label class="field-radio">
+              <input class="visually-hidden" type="radio" name="fat-in-percents" id="to-10-percent" checked>
+              <span class="field-radio__box"></span>
+              до 10%
+            </label>
+            <label class="field-radio">
+              <input class="visually-hidden" type="radio" name="fat-in-percents" id="to-30-percent">
+              <span class="field-radio__box"></span>
+              до 30%
+            </label>
+            <label class="field-radio">
+              <input class="visually-hidden" type="radio" name="fat-in-percents" id="above-30-percent">
+              <span class="field-radio__box"></span>
+              выше 30%
+            </label>
           </p>
         </fieldset>
         <fieldset class="filters__block">
           <legend class="filters__name">Наполнители:</legend>
-          <p>
-            <input type="checkbox" name="chocolate" id="chocolate" checked>
+          <p class="filters__content">
+            <input class="visually-hidden" type="checkbox" name="chocolate" id="chocolate" checked>
             <label class="field-check" for="chocolate">шоколадные</label>
-          </p>
-          <p>
-            <input type="checkbox" name="sugar-powders" id="sugar-powders" checked>
+            <input class="visually-hidden" type="checkbox" name="sugar-powders" id="sugar-powders" checked>
             <label class="field-check" for="sugar-powders">сахарные присыпки</label>
-          </p>
-          <p>
-            <input type="checkbox" name="fruit" id="fruit">
+            <input class="visually-hidden" type="checkbox" name="fruit" id="fruit">
             <label class="field-check" for="fruit">фрукты</label>
-          </p>
-          <p>
-            <input type="checkbox" name="syrups" id="syrups">
+            <input class="visually-hidden" type="checkbox" name="syrups" id="syrups">
             <label class="field-check" for="syrups">сиропы</label>
-          </p>
-          <p>
-            <input type="checkbox" name="jams" id="jams">
+            <input class="visually-hidden" type="checkbox" name="jams" id="jams">
             <label class="field-check" for="jams">джемы</label>
           </p>
         </fieldset>
