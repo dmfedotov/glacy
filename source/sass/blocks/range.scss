@@ -1,0 +1,58 @@
+.range {
+  position: absolute;
+  top: 50%;
+  right: 22px;
+  left: 22px;
+
+  height: 4px;
+
+  background: rgba(#ffffff, 0.5);
+  transform: translateY(-50%);
+}
+
+.range__pin {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+
+  width: 20px;
+  height: 20px;
+
+  background: #ffffff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 4px;
+    height: 4px;
+
+    background: #ababab;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.range__pin--min {
+  left: 14px;
+}
+
+.range__pin--max {
+  right: 45px;
+}
+
+.range__depth {
+  position: absolute;
+  top: 50%;
+  right: 62px;
+  left: 30px;
+
+  height: 4px;
+
+  background: #f8f7f4;
+  transform: translateY(-50%);
+}

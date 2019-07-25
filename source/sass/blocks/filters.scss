@@ -1,8 +1,8 @@
 .filters {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  width: 880px;
+  align-items: flex-end;
+  width: 100%;
   margin-bottom: 40px;
 
   font-weight: 500;
@@ -17,10 +17,18 @@
   padding: 0;
 
   border: none;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .filters__block--range {
   width: 218px;
+
+  .filters__content {
+    position: relative;
+  }
 }
 
 .filters__content {

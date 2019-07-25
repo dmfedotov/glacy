@@ -24,11 +24,13 @@
 }
 
 .button--filters {
+  height: 36px;
+
   text-shadow: none;
 
   background: rgba(255, 255, 255, 0.2);
   border-radius: 21px;
-  box-shadow: 0 0 0 2px #ffffff;
+  box-shadow: inset 0 0 0 2px #ffffff;
 
   &:hover {
     color: #000000;
