@@ -1,0 +1,14 @@
+.inner-page {
+  background-color: #849d8f;
+}
+
+.inner-page__main .container {
+  display: flex;
+  flex-direction: column;
+
+  border-bottom: 1px solid #a9bbb1;
+}
+
+.inner-page__main .catalog {
+  margin-bottom: 15px;
+}
