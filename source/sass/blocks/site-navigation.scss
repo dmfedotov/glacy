@@ -60,7 +60,14 @@
 }
 
 .site-navigation__item--active {
-  color: #ffffff;
+  .site-navigation__link {
+    color: #ffffff;
 
-  background: #d07058;
+    background: #d07058;
+    border-bottom: none;
+
+    &::after {
+      background: transparent;
+    }
+  }
 }
