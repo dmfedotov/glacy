@@ -29,6 +29,10 @@
   border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
+
+  &:hover {
+    background-color: rgba(#ffffff, 0.4);
+  }
 }
 
 #product-1:checked ~ .wrapper #slide1,

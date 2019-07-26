@@ -94,6 +94,12 @@
     border: 1px solid #999999;
     box-shadow: 0 0 0 1px inset #999999;
   }
+
+  &:focus {
+    border: 1px solid #8fbdec;
+    outline: none;
+    box-shadow: 0 0 0 1px inset #8fbdec;
+  }
 }
 
 .user__form-bottom {
