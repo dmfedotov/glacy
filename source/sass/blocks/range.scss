@@ -21,6 +21,7 @@
   background: #ffffff;
   border-radius: 50%;
   transform: translateY(-50%);
+  cursor: move;
 
   &::before {
     content: "";
