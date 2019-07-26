@@ -370,25 +370,27 @@
       </div>
     </footer>
 
-    <section class="modal">
-      <h2 class="modal__title">Мы обязательно вам ответим!</h2>
-      <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
-        <p>
-          <label class="visually-hidden" for="user-name">Введите ваше имя</label>
-          <input class="modal__input" type="text" name="name" id="user-name" placeholder="Как вас зовут?">
-        </p>
-        <p>
-          <label class="visually-hidden" for="user-mail">Введите вашу почту</label>
-          <input class="modal__input" type="email" name="email" id="user-mail" placeholder="Ваша почта для ответа?">
-        </p>
-        <div>
-          <label class="visually-hidden" for="user-message">Введите ваше сообщение</label>
-          <textarea class="modal__message" name="message" id="user-message" cols="30"
-            rows="10">Напишите что-нибудь...</textarea>
-        </div>
-        <button class="modal__submit  button" type="submit">Отправить</button>
-      </form>
-    </section>
+    <div class="overlay">
+      <section class="modal">
+        <h2 class="modal__title">Мы обязательно вам ответим!</h2>
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
+          <p>
+            <label class="visually-hidden" for="user-name">Введите ваше имя</label>
+            <input class="modal__input" type="text" name="name" id="user-name" placeholder="Как вас зовут?">
+          </p>
+          <p>
+            <label class="visually-hidden" for="user-mail">Введите вашу почту</label>
+            <input class="modal__input" type="email" name="email" id="user-mail" placeholder="Ваша почта для ответа?">
+          </p>
+          <div>
+            <label class="visually-hidden" for="user-message">Введите ваше сообщение</label>
+            <textarea class="modal__message" name="message" id="user-message" cols="30"
+              rows="10">Напишите что-нибудь...</textarea>
+          </div>
+          <button class="modal__submit  button" type="submit">Отправить</button>
+        </form>
+      </section>
+    </div>
   </div>
 </body>
 
