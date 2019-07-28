@@ -370,9 +370,15 @@
       </div>
     </footer>
 
-    <div class="overlay">
+    <div class="overlay  overlay--active">
       <section class="modal">
         <h2 class="modal__title">Мы обязательно вам ответим!</h2>
+        <button class="modal__button">
+          <span class="visually-hidden">Закрыть форму обратной связи</span>
+          <svg class="modal__button-icon" width="17" height="17">
+            <use xlink:href="img/sprite.svg#close-icon"></use>
+          </svg>
+        </button>
         <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
           <p>
             <label class="visually-hidden" for="user-name">Введите ваше имя</label>
