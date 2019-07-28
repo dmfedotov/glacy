@@ -3,11 +3,9 @@
 const gulp         = require('gulp');
 const del          = require('del');
 const browserSync  = require('browser-sync').create();
-// const htmlmin      = require('gulp-htmlmin');
 const autoprefixer = require('autoprefixer');
 const svgstore     = require('gulp-svgstore');
 const postcss      = require("gulp-postcss");
-// const uncss        = require('postcss-uncss');
 const plumber      = require("gulp-plumber");
 const notify       = require("gulp-notify");
 const imagemin     = require("gulp-imagemin");
@@ -78,25 +76,21 @@ gulp.task('style', function () {
     .pipe(browserSync.stream());
   });
 
-  // Удаление из css неиспользуемых стилей
-// gulp.task('uncss', function () {
-//   return gulp.src(paths.styles.dest)
-//   .pipe(postcss([
-//     uncss({
-//       html: ['index.html', 'catalog.html', 'form.html']
-//     })
-//   ]))
-// });
-
-// Оптимизация картинок
-gulp.task('images', function () {
-  return gulp.src(paths.images.src)
+  // Оптимизация картинок
+  gulp.task('images', function () {
+    return gulp.src(paths.images.src)
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest(paths.images.dest));
+  });
+
+  gulp.task('js', function () {
+    return gulp.src(paths.scripts.src)
+    .pipe(gulp.dest(paths.scripts.dest))
+    .pipe(browserSync.stream());
 });
 
 // Очистка папки build
@@ -114,6 +108,7 @@ gulp.task('server', function () {
   gulp.watch(paths.styles.src, gulp.series('style'));
   gulp.watch(paths.html.src, gulp.series('html'));
   gulp.watch(paths.images.src, gulp.series('images'));
+  gulp.watch(paths.scripts.src, gulp.series('js'));
 });
 
 // Создание SVG спрайта
@@ -131,6 +126,7 @@ gulp.task('copy', function  () {
   return gulp.src([
     paths.fonts.src,
     paths.images.src,
+    paths.scripts.src
   ], {
     base: "source"
   })
@@ -143,7 +139,6 @@ gulp.task('build', gulp.series(
   'copy',
   'images',
   'style',
-  // 'sprite',
-  'html',
-  // 'uncss'
+  'sprite',
+  'html'
 ));
